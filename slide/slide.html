@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/slide.css">
+</head>
+
+<body>
+  <div class="novice-slider">
+    <div class="slide">
+      <div class="slide-wrap">
+      <div class="slide-list">
+        <img src="img/slide-1.jpg">
+      </div>
+      <div class="slide-list">
+        <img src="img/slide-2.jpg">
+      </div>
+      <div class="slide-list">
+        <img src="img/slide-3.jpg">
+      </div>
+      <div class="slide-list">
+        <img src="img/slide-4.jpg">
+      </div>
+    </div>
+    </div>
+    <div class="pagination"></div>
+    <div class="navigation"></div>
+  </div>
+  <div class="content">
+    OverWatch
+  </div>
+    <script src="js/slide.js"></script>
+    <script>
+      noviceSlider({
+        sum: 1,  // 当前帧
+        spaceTime: 1000, // 轮播间隔
+        switch: 'slide', // 切换方式: fade, default,slide
+        isNavigation: true, // 是否启用前进后退按钮
+        isStop: true, // 是否启用悬停
+        isPagination: true, // 是否启用分页器
+        width: '100%', // 控制轮播图宽度
+        stylePagination: 0 // 默认是数字，0 -> 无
+      })
+    </script>
+</body>
+
+</html>

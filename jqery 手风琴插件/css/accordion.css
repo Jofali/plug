@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.san-accordion {
+  max-width: 1170px;
+  margin: 10px auto;
+  box-sizing: border-box;
+  border-bottom: 2px solid #ccc;
+}
+.san-accordion .san-accordion-list {
+  border-top: 2px solid #ccc;
+}
+.san-accordion .san-accordion-list .san-accordion-title {
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  color: #333;
+  opacity: .5;
+}
+.san-accordion .san-accordion-list .san-accordion-title:hover {
+  opacity: 1;
+}
+.san-accordion .san-accordion-list .san-accordion-content {
+  border-top: 1px solid #ccc;
+  padding: 100px 50px;
+  text-align: justify;
+  background: #e7e7e7;
+  display: none;
+  font-size: 18px;
+  color: #333;
+  line-height: 2;
+}
+.san-accordion .san-accordion-list .san-accordion-content ul li {
+  list-style: none;
+}
+.san-accordion .san-accordion-list .san-accordion-content h1,
+.san-accordion .san-accordion-list .san-accordion-content h2,
+.san-accordion .san-accordion-list .san-accordion-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px 0;
+}
+.san-accordion .san-accordion-list .san-accordion-content img {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+.san-accordion .san-accordion-list .san-accordion-content a {
+  text-decoration: none;
+  color: rgba(0, 252, 138, 0.533);
+  opacity: 0.5;
+}
+.san-accordion .san-accordion-list .san-accordion-content a:hover {
+  opacity: 1;
+}

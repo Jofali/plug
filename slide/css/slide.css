@@ -1,0 +1,110 @@
+/*
+ * 颜色
+*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.novice-slider {
+  position: relative;
+  width: 100%;
+}
+.novice-slider .slide {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.novice-slider .slide .slide-list {
+  width: 100%;
+}
+.novice-slider .slide .slide-list img {
+  width: 100%;
+}
+.novice-slider .slide .slide-list-default {
+  position: absolute;
+  display: none;
+  top: 0;
+}
+.novice-slider .slide .active {
+  display: block;
+}
+.novice-slider .slide .slide-list-fade {
+  position: absolute;
+  top: 0;
+  transition: opacity .8s;
+  opacity: 0;
+}
+.novice-slider .slide .active-fade {
+  opacity: 1;
+}
+.novice-slider .slide .slide-slide {
+  position: relative;
+  transition: all .5s;
+  right: 0;
+}
+.novice-slider .slide .slide-list-slide {
+  float: left;
+}
+.novice-slider .pagination {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.novice-slider .pagination div {
+  display: inline-block;
+  background: #1a68cb;
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  text-align: center;
+  line-height: 15px;
+  margin-left: 10px;
+  padding: 3px;
+  border-radius: 50%;
+  color: #fff;
+}
+.novice-slider .pagination div:hover {
+  cursor: pointer;
+}
+.novice-slider .pagination .active {
+  background: pink;
+}
+.novice-slider .navigation {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+.novice-slider .navigation div {
+  transform: translateY(-50%);
+  margin: 10px auto;
+  font-size: 48px;
+  font-family: "微软雅黑";
+  font-weight: 100;
+  color: #fff;
+  opacity: 0.3;
+  transition: all .5s;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  padding: 1px;
+  border-radius: 20%;
+}
+.novice-slider .navigation div img {
+  max-width: 100%;
+}
+.novice-slider .navigation div:first-child {
+  float: left;
+}
+.novice-slider .navigation div:last-child {
+  float: right;
+}
+.novice-slider .navigation div:hover {
+  cursor: pointer;
+  background: pink;
+  border-radius: 50%;
+  opacity: 1;
+}

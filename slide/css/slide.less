@@ -1,0 +1,120 @@
+/*
+ * 颜色
+*/
+@colorSlideOne: #ccc;
+@colorSlideTwo: #1a68cb;
+@colorSlideThree: pink;
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+.novice-slider {
+  position: relative;
+  width: 100%;
+  .slide {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    .slide-list {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    // default
+    .slide-list-default {
+      position: absolute;
+      display: none;
+      top: 0;
+    }
+    .active {
+      display: block;
+    }
+
+    // fade
+    .slide-list-fade {
+      position: absolute;
+      top: 0;
+      transition: opacity .8s;
+      opacity: 0;
+    }
+    .active-fade {
+      opacity: 1;
+    }
+
+    // slide
+    .slide-slide {
+      position: relative;
+      transition: all .5s;
+      right: 0;
+    }
+    .slide-list-slide {
+      float: left;
+    }
+  }
+
+  .pagination {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    div {
+      display: inline-block;
+      background: @colorSlideTwo;
+      width:15px;
+      height:15px;
+      font-size: 10px;
+      text-align: center;
+      line-height: 15px;
+      margin-left: 10px;
+      padding: 3px;
+      border-radius: 50%;
+      color: #fff;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .active {
+      background: @colorSlideThree;
+    }
+  }
+  
+  .navigation {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    display: none;
+    div {
+      transform: translateY(-50%);
+      margin: 10px auto;
+      font-size: 48px;
+      font-family: "微软雅黑";
+      font-weight: 100;
+      color: #fff;
+      opacity: 0.3;
+      transition: all .5s;
+      width: 70px;
+      height: 70px;
+      text-align: center;
+      line-height: 70px;
+      padding: 1px;
+      border-radius: 20%;
+      img {
+        max-width: 100%;
+      }
+      &:first-child {
+        float: left;
+      }
+      &:last-child {
+        float: right;
+      }
+      &:hover {
+        cursor: pointer;
+        background: @colorSlideThree;
+        border-radius: 50%;
+        opacity: 1;
+      }
+    }
+  }
+}
